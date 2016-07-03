@@ -21,11 +21,12 @@ class GoalForm extends Component {
     render() {
         const {goalInput} = this.props
         return (
-            <div>
+            <div className="text-xs-center form-inline">
                 <div className="form-group">
-                    <input onChange={this.onGoalChange} value={goalInput} ref={(c) => this.goalInput = c} className="form-control" />
+                    <div className="label">I want to </div>
+                    <input onChange={this.onGoalChange} placeholder="Type your goal!" value={goalInput} ref={(c) => this.goalInput = c} className="form-control m-r-1" />
                 </div>
-                <button className="btn btn-primary btn-block" onClick={this.onGoalSubmit}>Ok</button>
+                <button className="btn btn-primary-2 btn-lg" onClick={this.onGoalSubmit}>Do it!</button>
             </div>
         );
     }

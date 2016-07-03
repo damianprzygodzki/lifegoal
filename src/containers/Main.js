@@ -22,6 +22,9 @@ class Main extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-6 col-sm-offset-3">
+                            <h1 className="text-xs-center m-b-3 m-t-3 text-danger">Define your goal!</h1>
+                            <p className="text-xs-center" >You are here now</p>
+                            <p className="text-xs-center" >X</p>
                             {this.renderGoalPath()}
                             <Goal goal={goalPath.mainGoal} />
 

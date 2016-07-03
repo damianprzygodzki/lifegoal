@@ -3,3 +3,42 @@
 * {
     margin:0;
 }
+
+body {
+    background-color: #fff;
+    font-family: 'Permanent Marker', cursive;
+    color: #000;
+    font-size: 24px;
+}
+
+.btn {
+    border-radius:0;
+    border: 0;
+}
+
+.btn-primary-2 {
+    background-color: #fff;
+    color: #000;
+    transition: .3s all;
+}
+
+.btn-primary-2:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+.form-control {
+    border-width: 0 0 2px 0;
+    border-radius: 0;
+    font-size: 24px;
+    text-align:center;
+    border-color: #000;
+}
+
+.label{
+    color: #000;
+}
