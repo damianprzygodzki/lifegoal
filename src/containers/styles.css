@@ -37,6 +37,7 @@ body {
     font-size: 24px;
     text-align:center;
     border-color: #000;
+    min-width: 500px;
 }
 
 .label{

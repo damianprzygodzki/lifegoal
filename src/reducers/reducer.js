@@ -20,7 +20,8 @@ export default function goalStateHandler(state = initialState, action) {
             return update(state, {
                 goalPath: {
                     mainGoal: {$set: action.goal}
-                }
+                },
+                goalInput: {$set: ""}
             })
         case types.SUB_GOAL_SUBMITTED:
             return update(state, {
@@ -31,7 +32,8 @@ export default function goalStateHandler(state = initialState, action) {
                             id: state.goalPath.subGoals.reduce((maxId, goal) => Math.max(goal.id, maxId), -1) + 1
                         }]
                     }
-                }
+                },
+                goalInput: {$set: ""}
             })
         default:
             return state
