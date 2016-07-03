@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import stateChangeHandler from './reducer';
+import goalStateHandler from './reducer';
 import { routerReducer as routing } from 'react-router-redux';
 
 const rootReducer = combineReducers({
-    stateChangeHandler,
+    goalStateHandler,
     routing
 });
 
