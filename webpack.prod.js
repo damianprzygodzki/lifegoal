@@ -8,9 +8,8 @@ module.exports = {
         './index.html'
     ],
     output: {
-        path: path.join(__dirname, 'dist'),
-        filename: 'js/bundle.js',
-        filename: '/index.html'
+        path: './dist',
+        filename: '/bundle.js'
     },
     plugins: [
         new webpack.DefinePlugin({
@@ -25,7 +24,7 @@ module.exports = {
             loaders: ['react-hot', 'babel'],
             include: path.join(__dirname, 'src')
         }, {
-            test: /\.(jpg|png)$/,
+            test: /\.(jpg|png|svg|eot|woff|woff2|ttf)$/,
             loader: 'file?name=[path][name].[hash].[ext]'
         }, {
             test: /\.css$/,
